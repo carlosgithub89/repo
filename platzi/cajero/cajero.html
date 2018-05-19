@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CAJERO</title>
+    <link rel="stylesheet" type="text/css" href="cajero.css">
+  </head>
+  <body>
+
+    <div class="numberPad">
+
+      <p>
+        <input id="dinero" type="text" value="0" class="display" readonly>
+      </p>
+
+      <p>
+        <input type="button" value="1" id="num1" class="key">
+        <input type="button" value="2" id="num2" class="key">
+        <input type="button" value="3" id="num3" class="key">
+      </p>
+
+      <p>
+        <input type="button" value="4" id="num4" class="key">
+        <input type="button" value="5" id="num5" class="key">
+        <input type="button" value="6" id="num6" class="key">
+      </p>
+
+      <p>
+        <input type="button" value="7" id="num7" class="key">
+        <input type="button" value="8" id="num8" class="key">
+        <input type="button" value="9" id="num9" class="key">
+      </p>
+
+      <p>
+        <div class="bottomPad">
+          <input type="button" value="Borrar" id="botonBorrar" class="key">
+          <input type="button" value="0" id="num0" class="key">
+          <input type="button" value="Extraer" id="botonExtraer" class="key">
+        </div>
+
+      </p>
+
+    </div>
+    
+    <script type="text/javascript" src="Eventos.js"></script>
+    <script type="text/javascript" src="Dolares.js"></script>
+    <script type="text/javascript" src="Billete.js"></script>
+    <script type="text/javascript" src="Caja.js"></script>
+    <script type="text/javascript" src="cajero.js"></script>
+
+  </body>
+</html>
