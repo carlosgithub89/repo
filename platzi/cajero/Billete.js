@@ -26,4 +26,10 @@ class Billete{
     this.cantidad = this.cantidad - billete.cantidad;
     this.total = this.valor * this.cantidad;
   }
+
+  regresar(billete){
+
+    this.cantidad = this.cantidad + billete.cantidad;
+    this.total = this.valor * this.cantidad;
+  }
 }

@@ -16,12 +16,28 @@ class Caja{
 
     var resultado = 0;
 
-    for (var billete of this.caja) {
+    for (let billete of this.caja) {
 
       resultado += billete.total;
     }
 
     return resultado;
+  }
+
+
+  regresar(retiros){
+
+    for (let billete of this.caja) {
+
+      for (let retiro of retiros) {
+
+        if (retiro.valor == billete.valor){
+
+          billete.regresar(retiro);
+          continue;
+        }
+      }
+    }
   }
 
 }
